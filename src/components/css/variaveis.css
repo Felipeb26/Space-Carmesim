@@ -1,0 +1,17 @@
+:root {
+    --cor-verdeEscuro: #083d3e;
+    --cor-verdeClaro: rgb(24, 84, 84);
+    --cor-branco: rgba(255, 255, 255, 0.812);
+    --cor-vermelhoClaro: rgb(220, 20, 20);
+    --cor-fundoVerde: rgb(49, 70, 70);
+    --cor-cardCinza: rgb(97, 124, 124);
+    --cor-logo: #186f6f;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-style: none;
+	text-decoration: none;
+}
