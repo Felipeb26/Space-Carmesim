@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Index />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Index />
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

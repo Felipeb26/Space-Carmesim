@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function contatos(){
+function contatos(){
     return(
         <div>
             <h2>teste de rotas</h2>
@@ -8,3 +8,5 @@ export default function contatos(){
         </div>
     );
 }
+
+export default contatos;
