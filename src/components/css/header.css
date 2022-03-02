@@ -1,6 +1,6 @@
 header {
 	justify-content: space-between;
-	background: #1d1c1c;
+	background: var(--cor-back);
 	align-items: center;
 	position: fixed;
 	display: flex;
@@ -38,4 +38,5 @@ header {
 	color: var(--cor-vermelhoClaro);
 	text-decoration: underline;
 	font-weight: bold;
+	transition:  ease-in-out 0.5s;
 }

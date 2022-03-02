@@ -1,10 +1,12 @@
 import React from "react";
+import HEADER from "./pages/header"
+import FOOTER from "./pages/footer"
 
 function contatos(){
     return(
         <div>
-            <h2>teste de rotas</h2>
-            <h2>teste de rotas</h2>
+            <HEADER/>
+            <FOOTER/>
         </div>
     );
 }

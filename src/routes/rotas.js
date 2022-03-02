@@ -1,20 +1,18 @@
 import React from "react";
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	useRoutes,
-} from "react-router-dom";
-import Index from "../home";
+import {Routes, Route} from "react-router-dom"
 
+import Index from "../home"
+import Contato from "../contato"
 
-import INDEX from "../home";
-import CONT from "../pages/contato";
-
-export  function App(){
-	let routes = useRoutes([
-		{ path: "/", element: <INDEX/> },
-        { path: "contato", element: <CONT/> }
-    	]);
-	return routes;
+function Rotas(){
+	return (
+		<div>
+			<Routes>
+				<Route path="/" element={<Index/>} />
+				<Route path="/home" element={<Contato/>} />
+			</Routes>
+		</div>
+	);
 };
+
+export default Rotas;
