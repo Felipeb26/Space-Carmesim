@@ -1,6 +1,6 @@
 import React from "react";
-import HEADER from "./pages/header"
-import FOOTER from "./pages/footer"
+import HEADER from "./pages/componentes-home/header"
+import FOOTER from "./pages/componentes-home/footer"
 
 function contatos(){
     return(
