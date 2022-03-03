@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    position: absolute;
+    position: relative;
     display: flex;
     margin: 5rem 0 0 0;
     height: 14rem;
@@ -58,4 +58,36 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+/* footer do contatos */
+.redesSociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.contatoTelefones{
+    display: flex;
+    flex-direction: column;
+}
+
+.contatoIcone{
+    margin-right: 1rem;
+}
+
+.contatoLocal{
+    color: yellow;
+}
+.contatoWhats{
+    color: green;
+}
+.contatoEmail{
+    color: blue;
+}
+.contatoInsta{
+    color: purple;
+}
+
+.contatos{
+    margin: 0 10px 0 0;
 }

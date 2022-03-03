@@ -1,11 +1,13 @@
 import React from "react";
-import HEADER from "./pages/componentes-home/header"
-import FOOTER from "./pages/componentes-home/footer"
+import HEADER from "./pages/header"
+import BODY from "./pages/BodyContato"
+import FOOTER from "./pages/FooterContato"
 
 function contatos(){
     return(
         <div>
             <HEADER/>
+            <BODY/>
             <FOOTER/>
         </div>
     );

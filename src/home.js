@@ -1,6 +1,6 @@
-import HEADER from "./pages/componentes-home/header";
-import BODY from "./pages/componentes-home/body";
-import FOOTER from "./pages/componentes-home/footer";
+import HEADER from "./pages/header";
+import BODY from "./pages/body";
+import FOOTER from "./pages/footer";
 
 export default function Index(){
     return(

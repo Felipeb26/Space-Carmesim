@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from "/";
+import logo from "../components/img/helmet.png";
 import "../components/css/index.css";
 import { Link } from 'react-router-dom';
 
@@ -16,9 +16,9 @@ function App() {
 				<nav>
 					<ul className="links">
 						<li><Link className="link" to="/">HOME</Link></li>
-						<li><a className="link" href='gwre'>ESTILOS</a></li>
+						<li><a className="link" href='#'>ESTILOS</a></li>
 						<li><Link className="link" to="home">CONTATO</Link></li>
-						<li><a className="link" href='gwre'>QUEM SOMOS</a></li>
+						<li><a className="link" href='#'>QUEM SOMOS</a></li>
 					</ul>
 				</nav>
 			</header>

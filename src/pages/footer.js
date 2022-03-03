@@ -14,15 +14,15 @@ function footer(){
 				</span>
 			</div>
 			<div className="dados">
-				<a className="contato" href="klml">
+				<a className="contato" href="#">
 					<FaEnvelope className="icone email" />
 					felipeb2silva@gmail.com
 				</a>
-				<a className="contato" href="ghjb">
+				<a className="contato" href="#">
 					<FaWhatsapp className="icone whats" />
 					entre em contato pelo whats`app
 				</a>
-				<a className="contato" href="ghjb">
+				<a className="contato" href="#">
 					<FaInstagram className="icone insta" />
 					entre em contato pelo intagtam
 				</a>

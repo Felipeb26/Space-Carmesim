@@ -1,13 +1,17 @@
-:root {
-	--cor-back: #1d1c1c;
-    --cor-branco: rgba(255, 255, 255, 0.812);
-    --cor-vermelhoClaro: rgb(220, 20, 20);
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	border-style: none;
 	text-decoration: none;
+}
+:root {
+	--cor-back: #1d1c1c;
+	--cor-blackTransparent: rgba(37, 34, 37, 0.774);
+    --cor-branco: rgba(255, 255, 255, 0.812);
+    --cor-vermelhoClaro: rgb(220, 20, 20);
+}
+
+textarea{
+	resize: none;
 }
