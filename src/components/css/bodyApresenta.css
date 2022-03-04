@@ -1,0 +1,55 @@
+.cardQuemSomos{
+    background: var(--cor-blackTransparent);
+    color: var(--cor-branco);
+    margin: 15rem 5rem 15rem 5rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: top;
+    display: flex;
+    width: 80%;
+    height: 50rem;
+    overflow: hidden;
+}
+
+.cardApresentacao{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px 0px 10px 10px;
+}
+
+.imagemTatuador{
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    height: 48rem;
+}
+
+.maisImagens{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.perfilTatuador{
+    margin: 20px 0 20px 0;
+    height: 50%;
+    width: 70%;
+}
+
+
+.cardTatuador{
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+    display: flex;
+    width: 30%;
+    overflow: hidden;
+}
+
+.about{
+    text-justify: distribute-all-lines;
+    word-wrap: break-word;
+    margin: 10px 5px 10px 5px;
+    font-size: 20px;
+}
