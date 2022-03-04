@@ -16,9 +16,9 @@ function App() {
 				<nav>
 					<ul className="links">
 						<li><Link className="link" to="/">HOME</Link></li>
-						<li><a className="link" href='#'>ESTILOS</a></li>
-						<li><Link className="link" to="home">CONTATO</Link></li>
-						<li><a className="link" href='#'>QUEM SOMOS</a></li>
+						<li><Link className="link" to="/estilos">ESTILOS</Link></li>
+						<li><Link className="link" to="/contato">CONTATO</Link></li>
+						<li><Link className="link" to="/quemsomos">QUEM SOMOS</Link></li>
 					</ul>
 				</nav>
 			</header>

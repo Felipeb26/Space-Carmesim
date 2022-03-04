@@ -1,13 +1,15 @@
+.FOOTER{    
+    background: #1d1c1c;
+    width: 100%;
+}
+
 .myFooter{
     color: var(--cor-branco);
-    background: #1d1c1c;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    position: relative;
     display: flex;
-    margin: 5rem 0 0 0;
-    height: 14rem;
+    height: 10rem;
     width: 100%;
     bottom: 0px;
 }
@@ -16,51 +18,18 @@
     margin: 0 0 0.5rem 0;
 }
 
-.dados{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .contato{
     color: var(--cor-branco);
-    margin: 1rem 0 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
     font-size: 20px;
 }
 
-.icone{
-    margin-right: 1rem;
-}
-
-.local{
-    color: yellow;
-}
-.whats{
-    color: green;
-}
-.email{
-    color: blue;
-}
-.insta{
-    color: purple;
-}
-
-.local:hover, .email:hover, .whats:hover, .insta:hover{
-    color: red;
-}
-
-.divMapa{
-    width: 50%;
-    height: 80%;
-}
-
 .mapa{
+    margin: 0.5rem 0 0 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
 }
 
-/* footer do contatos */
 .redesSociais{
     display: flex;
     flex-direction: column;
@@ -69,10 +38,6 @@
 .contatoTelefones{
     display: flex;
     flex-direction: column;
-}
-
-.contatoIcone{
-    margin-right: 1rem;
 }
 
 .contatoLocal{

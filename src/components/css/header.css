@@ -36,7 +36,7 @@ header {
 
 .link:hover {
 	color: var(--cor-vermelhoClaro);
+	transition:  ease-in-out 0.4s;
 	text-decoration: underline;
 	font-weight: bold;
-	transition:  ease-in-out 0.5s;
 }

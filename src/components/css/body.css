@@ -2,6 +2,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 40rem;
 }
 
 
@@ -14,9 +15,9 @@
 }
 
 .title{
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .imgs{
@@ -28,6 +29,7 @@
 .img{
     margin: 0 5px 10px 5px;
     border-radius: 5px;
+    width: 33%;
     height: 20rem;
 }
 
