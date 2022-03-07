@@ -7,28 +7,21 @@ import "../assets/css/pagination.css";
 function Pagenation() {
 	const [itens, setItens] = useState([]);
 
-	var page = 0;
-
-	if (localStorage == null) {
-		page = 0;
-	} else {
-		page = localStorage.getItem("pagina");
-	}
-
-	useEffect(() => {
+	const call = useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: "http://localhost:8080/page?page=" + page,
+				url: "http://localhost:8080/page?page=" + localStorage.getItem("pagina"),
 				headers: {},
 			})
 				.then((response) => response.data)
 				.then((data) => data);
 
 			setItens(result);
+			console.log(result)
 		};
 		fetchData();
-	});
+	}, []);
 
 	return (
 		<>
@@ -64,11 +57,8 @@ function Pagenation() {
 						<button
 							className="Btn"
 							value={index}
-							onClick={(e) =>
-								localStorage.setItem(
-									"pagina",
-									Number(e.target.value)
-								)
+							onClick={() =>
+								console.dir(call)
 							}
 						>
 							{index + 1}

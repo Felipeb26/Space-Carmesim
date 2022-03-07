@@ -15,7 +15,7 @@ function corpo(){
 			<div className="card">
 				<div className="corpo">
 					<div className="title">
-						<h3>COME TO TRY</h3>
+						<h3>ULTIMAS REALIZADAS</h3>
 					</div>
 					<div className="imgs">
 						<img className="img" src={tato1} alt="tatuagem"></img>
