@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: top;
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 50rem;
     overflow: hidden;
 }
@@ -32,18 +32,28 @@
 }
 
 .perfilTatuador{
-    margin: 20px 0 20px 0;
-    height: 50%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    height: 70%;
     width: 70%;
+    /* animation: tremer .2s;
+    animation-iteration-count: 4; */
 }
 
+/* @keyframes tremer {
+0% {margin-left: 0;}
+25% {margin-left: 1px;}
+50% {margin-left: 0;}
+    75% {margin-left: -1px;}
+    100% {margin-left: 0;}
+} */
 
 .cardTatuador{
     align-items: center;
     flex-direction: column;
     margin: 1rem 0 0 0;
     display: flex;
-    width: 30%;
+    width: 50%;
     overflow: hidden;
 }
 

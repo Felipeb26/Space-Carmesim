@@ -1,47 +1,10 @@
-.card{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 40rem;
-}
-
-
-.corpo{
-    background: var(--cor-blackTransparent);
-    color: var(--cor-branco);
-    margin: 10rem 1rem 0 1rem;
-    border-radius: 10px;
-    width: 73rem;
-}
-
-.title{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.imgs{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.img{
-    margin: 0 5px 10px 5px;
-    border-radius: 5px;
-    width: 33%;
-    height: 20rem;
-}
-
-/* body contato */
-
 .cardLocalizacao{
     background: var(--cor-blackTransparent);
     border-radius: 5px;
     color: var(--cor-branco);
     align-items: top;
     display: flex;
-    margin: 10rem 5rem 10rem 2rem;
+    margin: 13rem 5rem 10rem 2rem;
     height: 40rem;
 }
 

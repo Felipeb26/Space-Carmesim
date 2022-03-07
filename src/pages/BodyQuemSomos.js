@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../components/css/bodyApresenta.css"
+import "../assets/css/bodyApresenta.css";
 import KRATOS from "../components/img/kratos.png"
 import KRATOS_PERFIL from "../components/img/kratos1.png"
 import ZARAKI from "../components/img/teste.mp4"
@@ -25,7 +25,7 @@ function QuemSomos(){
 					className="perfilTatuador"
 					src={ZARAKI}
 					preload="auto"
-					controls autoPlay  muted loop 
+					autoPlay  muted loop 
 				></video>
 			</div>
 			<div className="cardTatuador">

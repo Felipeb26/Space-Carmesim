@@ -1,7 +1,7 @@
 import React from "react";
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
-import "../components/css/footer.css"
+import "../assets/css/footer.css";
 
 function footer(){
     return (

@@ -1,0 +1,66 @@
+.choiceStyle{
+    margin: 10rem 0 0 2rem;
+}
+
+.styles{
+    border: 3px solid var(--cor-vermelhoRadiante);
+    background: var(--cor-blackTransparent);
+    /* text-shadow: 2px 2px 5px var(--cor-branco); */
+    color: var(--cor-vermelhoRadiante);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.stylesOption{
+    color: var(--cor-branco);
+    font-weight: bold;
+}
+
+.cardTato{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    margin: 0 0 0 0;
+}
+
+.item {
+	background: var(--cor-blackTransparent);
+	color: var(--cor-branco);
+	border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+	margin: 1rem;
+}
+
+.imagem{
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+}
+
+.divBtn {
+	justify-content: center;
+	display: flex;
+    margin: 0 0 5rem 0;
+}
+
+.Btn {
+    box-shadow: 2px 2px 5px var(--cor-branco);
+    background: var(--cor-blackTransparent);
+    color: var(--cor-branco);
+	border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 15px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.Btn:active{
+    background: var(--cor-vermelhoClaro);
+box-shadow: 5px 2px 5px var(--cor-vermelhoClaro);
+}
