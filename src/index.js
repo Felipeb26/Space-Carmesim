@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './routes/rotas';
-import reportWebVitals from './reportWebVitals';
+import Index from 'routes/rotas';
+import reportWebVitals from 'reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(

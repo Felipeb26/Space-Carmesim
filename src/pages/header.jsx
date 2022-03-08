@@ -1,7 +1,7 @@
 import React from 'react';
 
-import logo from "../components/img/helmet.png";
-import "../assets/css/index.css";
+import logo from "components/img/helmet.png";
+import "assets/css/index.css";
 import { Link } from 'react-router-dom';
 
 function App() {

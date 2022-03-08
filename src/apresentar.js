@@ -1,7 +1,7 @@
 import React from "react";
-import HEADER from "./pages/header";
-import BODY from "./pages/BodyQuemSomos"
-import FOOTER from "./pages/footer"
+import HEADER from "pages/header";
+import BODY from "pages/BodyQuemSomos"
+import FOOTER from "pages/footer"
 
 function QuemSomos(){
     return (

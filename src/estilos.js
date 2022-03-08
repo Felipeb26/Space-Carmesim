@@ -1,7 +1,7 @@
 import React from "react";
-import HEADER from "./pages/header"
-import FOOTER from "./pages/footer";
-import BODY from "./pages/pagenation"
+import HEADER from "pages/header"
+import FOOTER from "pages/footer";
+import BODY from "pages/pagenation"
 
 function Estilos(){
     return (

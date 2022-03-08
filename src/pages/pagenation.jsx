@@ -1,24 +1,29 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ORUMAITO from "../components/img/orumaito.png";
-
-import "../assets/css/pagination.css";
+import "assets/css/pagination.css";
+import ORUMAITO from "components/img/orumaito.png";
 
 function Pagenation() {
 	const [itens, setItens] = useState([]);
 
-	const call = useEffect(() => {
+	let page = sessionStorage.getItem("pag");
+
+	if (page == null) {
+		page = 0;
+	} else {
+		page = sessionStorage.getItem("pag");
+	}
+
+	useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: "http://localhost:8080/page?page=" + localStorage.getItem("pagina"),
-				headers: {},
+				url: `http://localhost:8080/page?page=${page}`,
 			})
 				.then((response) => response.data)
 				.then((data) => data);
 
 			setItens(result);
-			console.log(result)
 		};
 		fetchData();
 	}, []);
@@ -27,11 +32,9 @@ function Pagenation() {
 		<>
 			<div className="choiceStyle">
 				<select className="styles">
-					<option className="stylesOption">TODAS</option>
-					<option className="stylesOption">PRETO E BRANCO</option>
-					<option className="stylesOption">COLORIDAS</option>
-					<option className="stylesOption">REALISTA</option>
-					<option className="stylesOption">ANIME</option>
+					{itens.content?.map((item) => {
+						return <option className="stylesOption">{item.idImg.nome}</option>;
+					})}
 				</select>
 			</div>
 			<div className="cardTato">
@@ -57,9 +60,10 @@ function Pagenation() {
 						<button
 							className="Btn"
 							value={index}
-							onClick={() =>
-								console.dir(call)
-							}
+							onClick={(e) => [
+								sessionStorage.setItem("pag", e.target.value),
+								window.location.reload(),
+							]}
 						>
 							{index + 1}
 						</button>
