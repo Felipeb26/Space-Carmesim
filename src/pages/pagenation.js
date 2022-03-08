@@ -1,27 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React from "react"
+import { useEffect, useState } from "react";
 import axios from "axios";
-import ORUMAITO from "../components/img/orumaito.png";
-
 import "../assets/css/pagination.css";
 
-function Pagenation() {
-	const [itens, setItens] = useState([]);
+import ORUMAITO from "../components/img/orumaito.png";
+import PAGES from "../components/itens/PagenationComponent"
 
-	const call = useEffect(() => {
+function Pagenation(){
+	const [itens, setItens] = useState([]);
+	const [setCurrentPage] = useState(0);
+	const [page, setPage] = useState("");
+
+	
+	useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: "http://localhost:8080/page?page=" + localStorage.getItem("pagina"),
+				cors: {},
+				url: `http://localhost:8080/page?page=${page}`,
 				headers: {},
 			})
 				.then((response) => response.data)
 				.then((data) => data);
 
 			setItens(result);
-			console.log(result)
 		};
 		fetchData();
-	}, []);
+	},[page]);
 
 	return (
 		<>
@@ -57,8 +62,8 @@ function Pagenation() {
 						<button
 							className="Btn"
 							value={index}
-							onClick={() =>
-								console.dir(call)
+							onClick={(e) =>
+								<PAGES setPage={setCurrentPage}/>
 							}
 						>
 							{index + 1}
