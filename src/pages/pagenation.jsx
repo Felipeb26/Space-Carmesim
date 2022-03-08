@@ -33,7 +33,11 @@ function Pagenation() {
 			<div className="choiceStyle">
 				<select className="styles">
 					{itens.content?.map((item) => {
-						return <option className="stylesOption">{item.idImg.nome}</option>;
+						return (
+							<option className="stylesOption">
+								{item.idImg.nome}
+							</option>
+						);
 					})}
 				</select>
 			</div>
