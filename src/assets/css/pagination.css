@@ -3,17 +3,16 @@
 }
 
 .styles{
-    border: 3px solid var(--cor-vermelhoRadiante);
-    background: var(--cor-blackTransparent);
-    /* text-shadow: 2px 2px 5px var(--cor-branco); */
-    color: var(--cor-vermelhoRadiante);
+    background-color: transparent;
+    text-decoration: underline;
     font-weight: bold;
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 20px;
+    text-shadow: 0 2px 10px var(--cor-branco);
 }
 
 .stylesOption{
+    background-color: transparent;
+    border-radius: 5px;
     color: var(--cor-branco);
     font-weight: bold;
 }
@@ -49,7 +48,7 @@
 }
 
 .Btn {
-    box-shadow: 2px 2px 5px var(--cor-branco);
+    box-shadow: 0px 2px 10px var(--cor-branco);
     background: var(--cor-blackTransparent);
     color: var(--cor-branco);
 	border-radius: 10px;
@@ -60,7 +59,12 @@
 	margin: 5px;
 }
 
-.Btn:active{
+.Btn:hover{
+    box-shadow: 0px 2px 10px var(--cor-vermelhoClaro);
     background: var(--cor-vermelhoClaro);
-box-shadow: 5px 2px 5px var(--cor-vermelhoClaro);
+}
+
+.Btn:active{
+    box-shadow: 0px 2px 10px var(--cor-vermelhoClaro);
+    background: var(--cor-vermelhoClaro);
 }

@@ -8,7 +8,7 @@
 :root {
 	--cor-back: #1d1c1c;
 	--cor-blackTransparent: rgba(37, 34, 37, 0.774);
-	--cor-branco: rgba(255, 255, 255, 0.812);
+	--cor-branco: #ffffffcf;
 	--cor-vermelhoClaro: rgb(220, 20, 20);
 	--cor-vermelhoRadiante: #ff0022;
 }

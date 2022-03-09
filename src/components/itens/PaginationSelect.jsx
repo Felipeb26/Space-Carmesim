@@ -6,27 +6,19 @@ import ORUMAITO from "components/img/orumaito.png";
 function Pagenation() {
 	const [itens, setItens] = useState([]);
 
-	let page = sessionStorage.getItem("pag");
-
-	if (page == null) {
-		page = 0;
-	} else {
-		page = sessionStorage.getItem("pag");
-	}
-
 	useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: `http://localhost:8080/page?page=${page}`,
+				url: `http://localhost:8080/style/coloridas`,
 			})
 				.then((response) => response.data)
-				.then((data) => data);
+				.then((data) => console.log(data.content));
 
 			setItens(result);
 		};
 		fetchData();
-	}, [page]);
+	},);
 
 	return (
 		<>

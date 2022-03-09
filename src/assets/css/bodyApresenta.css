@@ -36,17 +36,7 @@
     border-radius: 5px;
     height: 70%;
     width: 70%;
-    /* animation: tremer .2s;
-    animation-iteration-count: 4; */
 }
-
-/* @keyframes tremer {
-0% {margin-left: 0;}
-25% {margin-left: 1px;}
-50% {margin-left: 0;}
-    75% {margin-left: -1px;}
-    100% {margin-left: 0;}
-} */
 
 .cardTatuador{
     align-items: center;
