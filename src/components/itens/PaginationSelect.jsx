@@ -5,21 +5,27 @@ import ORUMAITO from "components/img/orumaito.png";
 
 function Pagenation() {
 	const [itens, setItens] = useState([]);
+	
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: `http://localhost:8080/style/coloridas`,
+				url: "http://localhost:8080/style/escolha do cliente",
 			})
 				.then((response) => response.data)
-				.then((data) => console.log(data.content));
-
-			setItens(result);
+				.then((data) => data);
+				
+			const imgs = result?.map((image) => {
+				const gets = image.idImg?.map((teste) => teste.nome);
+				return gets;
+			});
+			setItens(imgs);
 		};
 		fetchData();
-	},);
+	}, []);
 
+	console.log(itens);
 	return (
 		<>
 			<div className="choiceStyle">
@@ -31,39 +37,34 @@ function Pagenation() {
 					<option className="stylesOption">animes</option>
 				</select>
 			</div>
+
+			{/* <div>
+				{Array.from(Array(page), (item, index) =>{
+					return <button value={index} onClick={(e)=>console.log(e.target.value)}>{index + 1}</button>
+				})}
+			</div> */}
+
 			<div className="cardTato">
 				<div className="cardTato">
-					{itens.content?.map((item) => {
-						return (
-							<div className="item">
-								<span>{item.id}</span>
-								<img
-									className="imagem"
-									src={ORUMAITO}
-									alt="teste"
-								></img>
-							</div>
-						);
+					{itens?.map((item) => {
+						const tes = item.idImg?.map((imagem) => {
+							return (
+								<div className="item">
+									<span>{imagem.nome}</span>
+									<img
+										className="imagem"
+										src={ORUMAITO}
+										alt="teste"
+									></img>
+								</div>
+							);
+						});
+						return tes;
 					})}
 				</div>
 			</div>
 
-			<div className="divBtn">
-				{Array.from(Array(itens.totalPages), (item, index) => {
-					return (
-						<button
-							className="Btn"
-							value={index}
-							onClick={(e) => [
-								sessionStorage.setItem("pag", e.target.value),
-								window.location.reload(),
-							]}
-						>
-							{index + 1}
-						</button>
-					);
-				})}
-			</div>
+			<div></div>
 		</>
 	);
 }
