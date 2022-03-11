@@ -11,9 +11,8 @@
 }
 
 .stylesOption{
-    background-color: transparent;
+    background-color: var(--cor-red);
     border-radius: 5px;
-    color: var(--cor-branco);
     font-weight: bold;
 }
 
@@ -67,4 +66,14 @@
 .Btn:active{
     box-shadow: 0px 2px 10px var(--cor-vermelhoClaro);
     background: var(--cor-vermelhoClaro);
+}
+
+.link {
+    color: var(--cor-branco);
+    margin: 0 1rem 0 0;
+	cursor: pointer;
+}
+
+.link{
+    color: var(--cor-branco);
 }

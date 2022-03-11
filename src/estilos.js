@@ -1,15 +1,14 @@
 import React from "react";
-// import HEADER from "pages/header"
-// import FOOTER from "pages/footer";
-// import BODY from "pages/pagenation"
-import BODY from "components/itens/PaginationSelect"
+import HEADER from "pages/header"
+import FOOTER from "pages/footer";
+import BODY from "components/pagination/paginationAnime"
 
 function Estilos(){
     return (
 		<div>
-			{/* <HEADER/> */}
+			<HEADER/>
 			<BODY/>
-			{/* <FOOTER/> */}
+			<FOOTER/>
 		</div>
 	);
 };
