@@ -1,16 +1,16 @@
 import React from "react";
 import HEADER from "pages/header"
-import FOOTER from "pages/footer";
+import FOOTER from "pages/footer"
 import BODY from "components/pagenation/paginationAnime"
 
-function Estilos(){
+function AnimePage(){
     return (
-		<div>
-			<HEADER/>
-			<BODY/>
-			<FOOTER/>
-		</div>
+		<>
+			<HEADER />
+			<BODY />
+			<FOOTER />
+		</>
 	);
-};
+}
 
-export default Estilos;
+export default AnimePage;
