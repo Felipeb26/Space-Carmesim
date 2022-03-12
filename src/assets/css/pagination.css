@@ -3,7 +3,6 @@
 }
 
 .styles{
-    background-color: transparent;
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
@@ -11,7 +10,6 @@
 }
 
 .stylesOption{
-    background-color: var(--cor-red);
     border-radius: 5px;
     font-weight: bold;
 }

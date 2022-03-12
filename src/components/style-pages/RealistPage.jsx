@@ -1,6 +1,6 @@
 import React from "react";
-import HEADER from "pages/header";
-import FOOTER from "pages/footer";
+import HEADER from "components/html/header";
+import FOOTER from "components/html/footer";
 import BODY from "components/pagenation/paginationRealistas";
 
 function AnimePage() {

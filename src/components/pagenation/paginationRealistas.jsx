@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
 import ORUMAITO from "components/img/orumaito.png";
-import { Link } from "react-router-dom";
 import SELECT from "components/html/select";
 
 
@@ -21,7 +20,7 @@ function PagenationRealistc() {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: `http://localhost:8080/estilo/1?page=${page}`,
+				url: `http://localhost:8080/estilo/1`,
 			})
 				.then((response) => response.data)
 				.then((data) => data);

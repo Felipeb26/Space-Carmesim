@@ -20,7 +20,7 @@ function Pagenation() {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: `http://localhost:8080/estilo/2?page=${page}`,
+				url: `http://localhost:8080/estilo/2`,
 			})
 				.then((response) => response.data)
 				.then((data) => data);

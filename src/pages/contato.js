@@ -1,7 +1,7 @@
 import React from "react";
-import HEADER from "pages/header"
-import BODY from "pages/BodyContato"
-import FOOTER from "pages/footer"
+import HEADER from "components/html/header"
+import BODY from "components/html/BodyContato"
+import FOOTER from "components/html/footer"
 
 function contatos(){
     return(

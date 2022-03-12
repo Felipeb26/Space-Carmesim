@@ -20,7 +20,7 @@ function BWPagenation() {
 		const fetchData = async () => {
 			const result = await axios({
 				method: "get",
-				url: `http://localhost:8080/estilo/3?page=${page}`,
+				url: `http://localhost:8080/estilo/3`,
 			})
 				.then((response) => response.data)
 				.then((data) => data);
