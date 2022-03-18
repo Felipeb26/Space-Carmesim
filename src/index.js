@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Index from 'routes/rotas';
+import "assets/css/variaveis.css"
 import reportWebVitals from 'reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 

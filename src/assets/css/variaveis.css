@@ -6,10 +6,13 @@
 	text-decoration: none;
 }
 :root {
+	background: linear-gradient(180deg, #a31a1a 0%, #74181b 80%, #310b0b 100%);
+	background-attachment: fixed;
+
 	--cor-back: #1d1c1c;
 	--cor-blackTransparent: rgba(37, 34, 37, 0.774);
 	--cor-branco: #ffffffcf;
-	--cor-vermelhoClaro: rgb(220, 20, 20);
+	--cor-vermelhoClaro: #dc1414;
 	--cor-vermelhoRadiante: #ff0022;
 	--cor-red: #a31a1aee;
 }
@@ -18,14 +21,14 @@ textarea {
 	resize: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
 	background: var(--cor-vermelhoRadiante);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 	background: var(--cor-blackTransparent);
 }

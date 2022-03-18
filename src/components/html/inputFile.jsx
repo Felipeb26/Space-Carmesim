@@ -20,11 +20,22 @@ function InputFile() {
 	const img = urlCreator.createObjectURL(blob);
 
 	return (
-		<div className="inputFile">
-			<h3>teste byte</h3>
-			<input type="file" onChange={handleFileChange}></input>
-			<img src={img} alt="dgedg"></img>
-		</div>
+		<>
+			<div className="input">
+				<div className="inputFile">
+					<label className="inputLabel" htmlFor="fileCadastro">ESCOLHER FOTO</label>
+					<input
+						id="fileCadastro"
+						type="file"
+						onChange={handleFileChange}
+						name="fileCadastro"
+					></input>
+				</div>
+				<div className="image">
+					<img className="imgCadastro" src={img} alt="tatuagem"></img>
+				</div>
+			</div>
+		</>
 	);
 }
 
