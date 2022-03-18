@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
 import ORUMAITO from "components/img/orumaito.png";
-import { Link } from "react-router-dom";
 import SELECT from "components/html/select";
-
 
 function Pagenation() {
 	const [itens, setItens] = useState([]);

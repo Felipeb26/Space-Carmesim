@@ -5,12 +5,12 @@ import Index from "pages/home";
 import Contato from "pages/contato";
 import QuemSomos from "pages/apresentar";
 import CADATRO from "pages/cadastro";
-import Estilo from "components/pagenation-sub-pages/AllPhotos";
 
-import ANIME from "components/pagenation-sub-pages/AnimePage";
-import REAL from "components/pagenation-sub-pages/RealistPage";
-import COLOR from "components/pagenation-sub-pages/ColorPage";
-import BaW from "components/pagenation-sub-pages/BlackWhitePage";
+import Estilo from "components/style-pages/AllPhotos";
+import ANIME from "components/style-pages/AnimePage";
+import REAL from "components/style-pages/RealistPage";
+import COLOR from "components/style-pages/ColorPage";
+import BaW from "components/style-pages/BlackWhitePage";
 
 function Rotas() {
 	return (
