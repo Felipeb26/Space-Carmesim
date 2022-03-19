@@ -37,8 +37,8 @@
 
 .imgCadastro {
 	border-radius: 5px;
-	width: 30vw;
-	height: 33vh;
+	width: 28vw;
+	height: 40vh;
 }
 
 .inputFile {
@@ -70,7 +70,7 @@
 .btnEnvio:hover,
 .btnReset:hover {
 	box-shadow: 0 0px 10px var(--cor-branco);
-	color: var(--cor-red);
+	color: var(--cor-vermelhoClaro);
 }
 
 .inputLabel:hover {

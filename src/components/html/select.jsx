@@ -1,47 +1,35 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { Button, ButtonGroup, Dropdown } from "semantic-ui-react";
+import { useNavigate } from "react-router-dom";
 
 function Select() {
-	// const removePage = () => sessionStorage.removeItem("pag");
+	let navigate = useNavigate();
+	function handleChange(value) {
+		navigate(`${value}`);
+		value = "";
+	}
 	return (
 		<>
-		<Dropdown as={ButtonGroup}>
-				<Button variant="sucess">split</Button>
-				<Dropdown.Toggle split variant="sucess" />
-				<Dropdown.Menu>
-					<Dropdown.Item>
-						animes
-					</Dropdown.Item>
-				</Dropdown.Menu>
-		</Dropdown>
-			{/* <ul className="styles">
-				<li>
-					<Link className="Link" to="/estilos" onClick={removePage}>
-						todos
-					</Link>
-				</li>
-				<li>
-					<Link className="Link" to="/estilos/estilo=anime" onClick={removePage}>
-						animes
-					</Link>
-				</li>
-				<li>
-					<Link className="Link" to="/estilos/estilo=colorida" onClick={removePage}>
-						coloridas
-					</Link>
-				</li>
-				<li>
-					<Link className="Link" to="/estilos/estilo=realista" onClick={removePage}>
-						realista
-					</Link>
-				</li>
-				<li>
-					<Link className="Link" to="/estilos/estilo=preto-branco" onClick={removePage}>
-						preto e branco
-					</Link>
-				</li>
-			</ul> */}
+			<select
+				className="styles"
+				onChange={(event) => handleChange(event.target.value)}
+			>
+				<option className="Link">ESTILOS</option>
+				<option className="Link" value="/estilos">
+					TODOS
+				</option>
+				<option className="Link" value="/estilos/estilo=anime">
+					ANIME
+				</option>
+				<option className="Link" value="/estilos/estilo=colorida">
+					COLORIDA
+				</option>
+				<option className="Link" value="/estilos/estilo=realista">
+					REALISTA
+				</option>
+				<option className="Link" value="/estilos/estilo=preto-branco">
+					PRETO E BRANCO
+				</option>
+			</select>
 		</>
 	);
 }

@@ -3,6 +3,7 @@
 }
 
 .styles{
+    background-color: transparent;
     text-shadow: 0 5px 10px var(--cor-branco);
     text-decoration: underline;
     font-weight: bold;
@@ -10,8 +11,10 @@
 }
 
 .Link {
+    background: var(--cor-blackTransparent);
     color: var(--cor-branco);
     margin: 0 1rem 0 0;
+    font-weight: bold;
 	cursor: pointer;
 }
 

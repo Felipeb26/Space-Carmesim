@@ -21,10 +21,10 @@ function Cadastrar() {
 					<INPUT />
 					<select className="nameImg">
 						<option></option>
-						<option value="1">anime</option>
-						<option value="2">anime</option>
-						<option value="3">anime</option>
-						<option value="4">anime</option>
+						<option value="1">PRETO E BRANCO</option>
+						<option value="2">REALISTA</option>
+						<option value="3">COLORIDA</option>
+						<option value="4">ANIME</option>
 					</select>
 				</div>
 				<div className="btnsCadastro">

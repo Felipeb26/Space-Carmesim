@@ -3,7 +3,6 @@ import "assets/css/bodyApresenta.css";
 import KRATOS from "components/img/kratos.png"
 import KRATOS_PERFIL from "components/img/kratos1.png"
 import ZARAKI from "components/img/teste.mp4"
-import INPUT from "components/html/inputFile"
 
 function QuemSomos(){
     return (
@@ -71,8 +70,6 @@ function QuemSomos(){
 					</p>
 				</div>
 			</div>
-
-			<INPUT/>
 		</div>
 	);
 }
