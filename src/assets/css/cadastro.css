@@ -77,7 +77,7 @@
 	box-shadow: 0 0px 10px var(--cor-branco);
 }
 
-@media (max-width: 600px){
+@media (max-width: 720px){
 	.cardCadastro{
 		margin: 12rem 0 12rem 1rem;
 	}

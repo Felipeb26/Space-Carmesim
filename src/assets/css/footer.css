@@ -57,7 +57,7 @@
     margin: 0 10px 0 0;
 }
 
-@media (max-width: 600px){
+@media (max-width: 720px){
     .myFooter{
        font-size: 13px;
     }
