@@ -6,7 +6,7 @@ import INPUT from "components/html/inputFile";
 
 function Cadastrar() {
 	document.addEventListener("keydown", function (e) {
-		let link = "/";
+		let link = "/Space-Carmesim/";
 		if (e.ctrlKey && e.shiftKey && e.key === "E") {
 			window.location.assign(link);
 		}

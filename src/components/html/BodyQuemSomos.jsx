@@ -22,7 +22,7 @@ function QuemSomos(){
 						alt="foto perfil"
 					></img>
 					<video
-						className="perfilTatuador"
+						className="perfilTatuador video"
 						src={ZARAKI}
 						preload="auto"
 						autoPlay

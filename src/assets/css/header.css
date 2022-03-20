@@ -40,3 +40,15 @@ header {
 	text-decoration: underline;
 	font-weight: bold;
 }
+
+@media (min-width: 600px) and (max-width: 600px){
+	.logo{
+		margin: 0;
+		width: 5rem;
+		height: 5rem;
+	}
+	.link{
+		margin: 0 0 0 0.5rem;
+		font-size: 13px;
+	}
+}

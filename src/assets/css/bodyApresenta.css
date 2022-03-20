@@ -53,3 +53,33 @@
     margin: 10px 5px 10px 5px;
     font-size: 20px;
 }
+
+@media (min-width: 600px) and (max-width: 600px) {
+    .cardQuemSomos{
+        margin: 13rem 2rem 8rem 2rem;
+        height: 25rem;
+        font-size: 15px;
+    }
+    .imagemTatuador{
+        margin: 0 5px 0 0;
+        height: 23rem;
+        width: 12rem;
+    }
+    .cardTatuador{
+        margin: 1rem 0 0 5px;
+        font-size: 12px;
+    }
+    .perfilTatuador{
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+    .about{
+        font-size: 13px;
+        overflow: hidden;
+    }
+    .video{
+        margin: 0 15px 0 15px;
+        width: 100%;
+        height: 80%;
+    }
+}

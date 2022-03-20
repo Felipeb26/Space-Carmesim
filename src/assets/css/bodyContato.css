@@ -89,3 +89,25 @@
     margin: 1rem 0 1rem 0;
     font-size: 20px;
 }
+
+@media (min-width: 600px) and (max-width: 600px) {
+    .cardLocalizacao{
+        margin: 13rem 1rem 8rem 1rem;
+        height: 30rem;
+    }
+    .cardTitulo{
+        padding: 1rem 0 0 5px;
+        font-size: 13px;
+        width: 30%;
+    }
+    .mapaContato{
+        margin: 1rem 5px 1rem 0;
+        width: 50%;
+    }
+    .cardRefencias{
+        margin: 1rem 5px 1rem 0;
+    }
+    .mapaRefencia{
+        margin: 0 0 0 0;
+    }
+}

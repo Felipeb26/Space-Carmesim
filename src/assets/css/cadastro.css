@@ -76,3 +76,9 @@
 .inputLabel:hover {
 	box-shadow: 0 0px 10px var(--cor-branco);
 }
+
+@media (min-width: 600px) and (max-width: 600px){
+	.cardCadastro{
+		margin: 12rem 0 12rem 1rem;
+	}
+}

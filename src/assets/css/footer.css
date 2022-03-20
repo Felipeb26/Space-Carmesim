@@ -56,3 +56,12 @@
 .contatos{
     margin: 0 10px 0 0;
 }
+
+@media (min-width: 600px) and (max-width: 600px){
+    .myFooter{
+       font-size: 13px;
+    }
+    .contato{
+        font-size: 13px;
+    }
+}

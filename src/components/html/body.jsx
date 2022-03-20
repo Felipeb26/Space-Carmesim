@@ -13,7 +13,7 @@ import TATO3 from "components/img/tatuagem3.png";
 function Corpo() {
 
 	document.addEventListener("keydown", function(e){
-		let link = "/cadastro";
+		let link = "/Space-Carmesim/cadastro";
 			if(e.ctrlKey && e.shiftKey && e.key === "E"){
 				window.location.assign(link)
 			}
