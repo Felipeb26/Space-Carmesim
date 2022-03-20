@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Space-Carmesim/static/css/main.aa1c5102.css",
+    "main.js": "/Space-Carmesim/static/js/main.7299c8e0.js",
+    "static/js/787.e5372b0f.chunk.js": "/Space-Carmesim/static/js/787.e5372b0f.chunk.js",
+    "static/media/teste.mp4": "/Space-Carmesim/static/media/teste.ecbdd298a6463acd886a.mp4",
+    "static/media/inter.png": "/Space-Carmesim/static/media/inter.9ad6bae20db3fe3f260d.png",
+    "static/media/kratos.png": "/Space-Carmesim/static/media/kratos.8eba7e1e9bee32eb39e4.png",
+    "static/media/tatuagem2.png": "/Space-Carmesim/static/media/tatuagem2.39b829bff23214625840.png",
+    "static/media/helmet.png": "/Space-Carmesim/static/media/helmet.35325d2eb940a358a7b8.png",
+    "static/media/kratos1.png": "/Space-Carmesim/static/media/kratos1.f4b9d5259d1f31a160ea.png",
+    "static/media/tato1.png": "/Space-Carmesim/static/media/tato1.5c33587a01d4df3d85d7.png",
+    "static/media/tatuagem3.png": "/Space-Carmesim/static/media/tatuagem3.ce88b598a4a9c9d5dd8f.png",
+    "static/media/tato3.png": "/Space-Carmesim/static/media/tato3.8c8197ed96de6b61a803.png",
+    "static/media/orumaito.png": "/Space-Carmesim/static/media/orumaito.cc476e7c774f2a732601.png",
+    "static/media/inter1.png": "/Space-Carmesim/static/media/inter1.97b949c2cd3361c1c0b2.png",
+    "static/media/tato2.png": "/Space-Carmesim/static/media/tato2.532a1f01449d2296a9fb.png",
+    "static/media/tatuagem1.png": "/Space-Carmesim/static/media/tatuagem1.751c28003f6dbb7584c9.png",
+    "index.html": "/Space-Carmesim/index.html",
+    "main.aa1c5102.css.map": "/Space-Carmesim/static/css/main.aa1c5102.css.map",
+    "main.7299c8e0.js.map": "/Space-Carmesim/static/js/main.7299c8e0.js.map",
+    "787.e5372b0f.chunk.js.map": "/Space-Carmesim/static/js/787.e5372b0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa1c5102.css",
+    "static/js/main.7299c8e0.js"
+  ]
+}
