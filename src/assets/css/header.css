@@ -41,7 +41,7 @@ header {
 	font-weight: bold;
 }
 
-@media (min-width: 600px) and (max-width: 600px){
+@media (max-width: 600px){
 	.logo{
 		margin: 0;
 		width: 5rem;

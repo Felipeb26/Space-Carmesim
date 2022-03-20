@@ -55,7 +55,7 @@
 	width: 95%;
 }
 
-@media (min-width: 600px) and (max-width: 600px) {
+@media (max-width: 600px) {
 	.card{
 		margin: 2rem 0 0 0;
 		height: 30rem;
