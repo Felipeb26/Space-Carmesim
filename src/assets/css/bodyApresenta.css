@@ -54,7 +54,7 @@
     font-size: 20px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .cardQuemSomos{
         margin: 13rem 2rem 8rem 2rem;
         height: 25rem;

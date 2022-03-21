@@ -90,7 +90,7 @@
     font-size: 20px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .cardLocalizacao{
         margin: 13rem 1rem 8rem 1rem;
         height: 30rem;

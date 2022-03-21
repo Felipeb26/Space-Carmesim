@@ -41,7 +41,7 @@ header {
 	font-weight: bold;
 }
 
-@media (max-width: 720px){
+@media (max-width: 900px){
 	header{
 		justify-content: space-evenly;
 	}

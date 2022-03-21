@@ -76,7 +76,7 @@
     background: var(--cor-vermelhoClaro);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .imagem{
         width: 150px;
         height: 150px;
