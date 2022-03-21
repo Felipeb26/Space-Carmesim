@@ -1,67 +1,67 @@
-.FOOTER{    
-    background: #1d1c1c;
-    width: 100%;
+.FOOTER {
+	background: #1d1c1c;
+	width: 100%;
 }
 
-.myFooter{
-    color: var(--cor-branco);
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    height: 10rem;
-    width: 100%;
-    bottom: 0px;
+.myFooter {
+	color: var(--cor-branco);
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	height: 10rem;
+	width: 100%;
+	bottom: 0px;
 }
 
-.titleContato{
-    margin: 0 0 0.5rem 0;
+.titleContato {
+	margin: 0 0 0.5rem 0;
 }
 
-.contato{
-    color: var(--cor-branco);
-    margin: 0.5rem 0 0.5rem 0;
-    font-size: 20px;
+.contato {
+	color: var(--cor-branco);
+	margin: 0.5rem 0 0.5rem 0;
+	font-size: 20px;
 }
 
-.mapa{
-    margin: 0.5rem 0 0 0;
-    width: 100%;
-    height: 100%;
+.mapa {
+	margin: 0.5rem 0 0 0;
+	width: 100%;
+	height: 100%;
 }
 
-.redesSociais{
-    display: flex;
-    flex-direction: column;
+.redesSociais {
+	display: flex;
+	flex-direction: column;
 }
 
-.contatoTelefones{
-    display: flex;
-    flex-direction: column;
+.contatoTelefones {
+	display: flex;
+	flex-direction: column;
 }
 
-.contatoLocal{
-    color: yellow;
+.contatoLocal {
+	color: yellow;
 }
-.contatoWhats{
-    color: green;
+.contatoWhats {
+	color: green;
 }
-.contatoEmail{
-    color: blue;
+.contatoEmail {
+	color: blue;
 }
-.contatoInsta{
-    color: purple;
-}
-
-.contatos{
-    margin: 0 10px 0 0;
+.contatoInsta {
+	color: purple;
 }
 
-@media (max-width: 900px){
-    .myFooter{
-       font-size: 13px;
-    }
-    .contato{
-        font-size: 13px;
-    }
+.contatos {
+	margin: 0 10px 0 0;
+}
+
+@media (max-width: 900px) {
+	.myFooter {
+		font-size: 8px;
+	}
+	.contato {
+		font-size: 10px;
+	}
 }

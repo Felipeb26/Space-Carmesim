@@ -78,7 +78,7 @@
 
 @media (max-width: 900px) {
     .imagem{
-        width: 150px;
-        height: 150px;
+        width: 5rem;
+        height: 5rem;
     }
 }
