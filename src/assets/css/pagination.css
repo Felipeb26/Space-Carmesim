@@ -29,7 +29,6 @@
     align-items: center;
     flex-wrap: wrap;
     display: flex;
-    padding: 10px;
     margin: 0 0 0 0;
 }
 
@@ -77,6 +76,10 @@
 }
 
 @media (max-width: 900px) {
+    .cardTato{
+        margin: 0 0 0 0;
+        padding-top: 0.5rem;
+    }
     .imagem{
         width: 5rem;
         height: 5rem;
