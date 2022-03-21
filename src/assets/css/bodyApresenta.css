@@ -58,23 +58,22 @@
     .cardQuemSomos{
         margin: 13rem 2rem 8rem 2rem;
         height: 25rem;
-        font-size: 15px;
     }
     .imagemTatuador{
         margin: 0 5px 0 0;
         height: 23rem;
-        width: 12rem;
+        width: 10rem;
     }
     .cardTatuador{
         margin: 1rem 0 0 5px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .perfilTatuador{
         margin: 1rem 0 0 0;
         width: 100%;
     }
     .about{
-        font-size: 13px;
+        font-size: 12px;
         overflow: hidden;
     }
     .video{

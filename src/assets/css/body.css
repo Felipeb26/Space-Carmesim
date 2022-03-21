@@ -65,20 +65,19 @@
 		width: 73rem;
 	}
 	.title {
-		font-size: 25px;
+		font-size: 20px;
 	}
 	.title h3{
 		font-size: 20px;
 	}
 	.img {
 		margin: 0 5px 10px 5px;
-		width: 33%;
+		width: 30%;
 		height: 13rem;
 	}
 	.divImgLista {
 		margin: 0 0.1rem 8rem 0.1rem;
 		border-radius: 5px;
-		width: 40%;
-		height: 20rem;
+		height: 16rem;
 	}
 }

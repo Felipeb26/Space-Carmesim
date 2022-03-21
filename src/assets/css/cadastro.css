@@ -37,7 +37,7 @@
 
 .imgCadastro {
 	border-radius: 5px;
-	width: 28vw;
+	width: 90%;
 	height: 40vh;
 }
 
@@ -77,8 +77,22 @@
 	box-shadow: 0 0px 10px var(--cor-branco);
 }
 
-@media (max-width: 720px){
-	.cardCadastro{
+@media (max-width: 720px) {
+	.cardCadastro {
 		margin: 12rem 0 12rem 1rem;
+		width: 20rem;
+	}
+	.imgCadastro {
+		height: 33vh;
+	}
+	.nameImg{
+		font-size: 15px;
+	}
+	.inputLabel{
+		font-size: 15px;
+	}
+	.btnEnvio,
+	.btnReset {
+		font-size: 15px;
 	}
 }

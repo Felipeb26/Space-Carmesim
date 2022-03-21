@@ -42,6 +42,9 @@ header {
 }
 
 @media (max-width: 720px){
+	header{
+		justify-content: space-evenly;
+	}
 	.logo{
 		margin: 0;
 		width: 5rem;
@@ -49,6 +52,6 @@ header {
 	}
 	.link{
 		margin: 0 0 0 0.5rem;
-		font-size: 13px;
+		font-size: 11px;
 	}
 }
