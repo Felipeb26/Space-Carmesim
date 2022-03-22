@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
-import ORUMAITO from "components/img/orumaito.png";
+import ORUMAITO from "assets/img/orumaito.png";
 import SELECT from "components/html/select";
 
 function Pagenation() {
@@ -40,7 +40,6 @@ function Pagenation() {
 					{itens.content?.map((item) => {
 						return (
 							<div className="item">
-								<span>{item.nome}</span>
 								<img
 									className="imagem"
 									src={ORUMAITO}
