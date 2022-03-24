@@ -1,14 +1,14 @@
 import React from "react";
 import "assets/css/body.css";
 
-import tato1 from "components/img/tato1.png";
-import tato2 from "components/img/tato2.png";
-import tato3 from "components/img/tato3.png";
+import tato1 from "assets/img/tato1.WebP";
+import tato2 from "assets/img/tato2.png";
+import tato3 from "assets/img/tato3.WebP";
 
-import TATO from "components/img/tatuagem.png";
-import TATO1 from "components/img/tatuagem1.png";
-import TATO2 from "components/img/tatuagem2.png";
-import TATO3 from "components/img/tatuagem3.png";
+import TATO from "assets/img/tatuagem.png";
+import TATO1 from "assets/img/tatuagem1.png";
+import TATO2 from "assets/img/tatuagem2.WebP";
+import TATO3 from "assets/img/tatuagem3.WebP";
 
 function Corpo() {
 

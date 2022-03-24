@@ -1,8 +1,8 @@
 import React from "react";
 import "assets/css/bodyApresenta.css";
-import KRATOS from "components/img/kratos.png"
-import KRATOS_PERFIL from "components/img/kratos1.png"
-import ZARAKI from "components/img/teste.mp4"
+import KRATOS from "assets/img/kratos.png";
+import KRATOS_PERFIL from "assets/img/kratos1.png";
+import ZARAKI from "assets/img/teste.mp4";
 
 function QuemSomos(){
     return (

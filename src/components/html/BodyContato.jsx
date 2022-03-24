@@ -1,7 +1,7 @@
 import React from "react";
 import "assets/css/bodyContato.css"
-import Inter from "components/img/inter.png";
-import Inter1 from "components/img/inter1.png";
+import Inter from "assets/img/inter.png";
+import Inter1 from "assets/img/inter1.png";
 
 function body(){
     return (
