@@ -78,7 +78,8 @@
 
 .btnEnvio:hover,
 .btnReset:hover,
-.btnDelete:hover {
+.btnDelete:hover,
+.getImages:hover {
 	box-shadow: 0 0px 10px var(--cor-branco);
 	color: var(--cor-vermelhoClaro);
 }
@@ -98,6 +99,12 @@
 	overflow-y: scroll;
 }
 
+.sendAndGet {
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+
 .deleteImage {
 	background: var(--cor-blackTransparent);
 	border: 1px solid var(--cor-branco);
@@ -105,17 +112,32 @@
 	margin: 0 0.5rem 0.5rem 0.5rem;
 	border-radius: 10px;
 	flex-direction: row;
+	align-items: center;
 	display: flex;
 }
 
-.searchInput{
-	margin: 1rem 0 1rem 2rem;
+.deleteImage:hover{
+	box-shadow:  0 0px 10px var(--cor-branco), inset  0 0px 3px var(--cor-branco);
+	border: 1px solid var(--cor-back);
+}
+
+.searchInput {
+	margin: 1rem 0 1rem 0rem;
 	border-radius: 5px;
 	align-items: center;
 	display: flex;
 	font-size: 20px;
 	height: 2rem;
 	width: 60%;
+}
+
+.getImages {
+	background: var(--cor-back);
+	color: var(--cor-branco);
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
 }
 
 .imgDelete {
@@ -125,7 +147,7 @@
 	height: 3rem;
 }
 
-.imgDelete:active{
+.imgDelete:active {
 	zoom: 500%;
 	position: relative;
 }
@@ -144,9 +166,14 @@
 	.inputLabel {
 		font-size: 15px;
 	}
+	.deleteImage {
+		align-items: center;
+		display: flex;
+	}
 	.btnEnvio,
 	.btnReset,
-	.btnDelete {
+	.btnDelete,
+	.getImages {
 		font-size: 15px;
 	}
 }

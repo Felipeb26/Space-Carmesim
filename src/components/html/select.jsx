@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Select() {
 	let navigate = useNavigate();
+	
 	function handleChange(value) {
 		navigate(`${value}`);
 		value = "";
