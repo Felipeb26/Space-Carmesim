@@ -40,7 +40,6 @@ function Pagenation() {
 					{itens.content?.map((item) => {
 						return (
 							<div className="item">
-								<span>{item.nome}</span>
 								<img
 									className="imagem"
 									src={ORUMAITO}
