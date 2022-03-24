@@ -43,15 +43,18 @@ header {
 
 @media (max-width: 900px){
 	header{
-		justify-content: space-evenly;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.logo{
 		margin: 0;
-		width: 3rem;
-		height: 3rem;
+		width: 3.5rem;
+		height: 3.5rem;
 	}
 	.link{
 		margin: 0 0 0 0.5rem;
-		font-size: 0.75rem;
+		font-size: 12px;
 	}
 }
