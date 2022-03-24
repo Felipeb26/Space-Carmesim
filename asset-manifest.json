@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Space-Carmesim/static/css/main.33b9cbd0.css",
-    "main.js": "/Space-Carmesim/static/js/main.97dd30e3.js",
+    "main.css": "/Space-Carmesim/static/css/main.a1d5ecaf.css",
+    "main.js": "/Space-Carmesim/static/js/main.e696ea6a.js",
     "static/js/787.e5372b0f.chunk.js": "/Space-Carmesim/static/js/787.e5372b0f.chunk.js",
     "static/media/teste.mp4": "/Space-Carmesim/static/media/teste.ecbdd298a6463acd886a.mp4",
     "static/media/inter.png": "/Space-Carmesim/static/media/inter.9ad6bae20db3fe3f260d.png",
@@ -17,12 +17,12 @@
     "static/media/tato2.png": "/Space-Carmesim/static/media/tato2.532a1f01449d2296a9fb.png",
     "static/media/tatuagem1.png": "/Space-Carmesim/static/media/tatuagem1.751c28003f6dbb7584c9.png",
     "index.html": "/Space-Carmesim/index.html",
-    "main.33b9cbd0.css.map": "/Space-Carmesim/static/css/main.33b9cbd0.css.map",
-    "main.97dd30e3.js.map": "/Space-Carmesim/static/js/main.97dd30e3.js.map",
+    "main.a1d5ecaf.css.map": "/Space-Carmesim/static/css/main.a1d5ecaf.css.map",
+    "main.e696ea6a.js.map": "/Space-Carmesim/static/js/main.e696ea6a.js.map",
     "787.e5372b0f.chunk.js.map": "/Space-Carmesim/static/js/787.e5372b0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33b9cbd0.css",
-    "static/js/main.97dd30e3.js"
+    "static/css/main.a1d5ecaf.css",
+    "static/js/main.e696ea6a.js"
   ]
 }
