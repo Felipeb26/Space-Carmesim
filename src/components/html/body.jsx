@@ -13,7 +13,7 @@ import TATO3 from "assets/img/tatuagem3.WebP";
 function Corpo() {
 	document.addEventListener("keydown", function (e) {
 		if (e.ctrlKey && e.shiftKey && e.key === "E") {
-			window.location.assign("/cadastro");
+			window.location.assign("/Space-Carmesim/cadastro");
 		}
 	});
 
