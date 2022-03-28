@@ -24,7 +24,7 @@ function SearchDelete() {
 		console.log(value)
 	}
 	return (
-		<div className="cardDelete">
+		<form className="cardDelete" onSubmit={(event) => handleChange(event.target.value)}>
 			<div className="sendAndGet">
 				<input
 					className="searchInput"
@@ -34,7 +34,7 @@ function SearchDelete() {
 				/>
 				<input
 					className="getImages"
-					type="submit"
+					type="button"
 					placeholder={name}
 					value="ENVIAR"
 					onClick={(e) => setNome(e.target.placeholder)}
@@ -62,7 +62,7 @@ function SearchDelete() {
 					</div>
 				);
 			})}
-		</div>
+		</form>
 	);
 }
 

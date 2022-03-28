@@ -46,7 +46,7 @@
 .imgCadastro {
 	border-radius: 5px;
 	width: 90%;
-	height: 30vh;
+	height: 42vh;
 }
 
 .inputFile {
@@ -153,15 +153,22 @@
 }
 
 @media (max-width: 900px) {
+	.cardsDeleteUpdate{
+		margin: 0 0 0 0;
+		flex-wrap: wrap;
+	}
 	.cardCadastro {
 		margin: 12rem 0 12rem 1rem;
-		width: 20rem;
+		width: 25rem;
 	}
 	.imgCadastro {
 		height: 33vh;
 	}
 	.nameImg {
 		font-size: 15px;
+	}
+	.cardDelete{
+		width: 25rem;
 	}
 	.inputLabel {
 		font-size: 15px;

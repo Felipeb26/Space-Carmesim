@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import INPUT from "components/html/inputFile";
 
 function CreateUpdate() {
-	const style = (e) => {e.preventDefault()};
+	let style = (value) => {
+		const newValue = { ...value };
+		newValue[value.target.id] = value.target.value;
+		data.idImg.push({ id: newValue.id });
+	};
 	const [data, setData] = useState({
 		nome: "",
-		idImg: [
-			{
-				id: style,
-			},
-		],
+		idImg: [],
 	});
 
 	function postData(e) {
@@ -18,10 +18,8 @@ function CreateUpdate() {
 		setData(newData);
 	}
 
-	
-
 	function submit(e) {
-		e.preventDefault();
+		e.preventDefault()
 		console.log(data);
 	}
 
@@ -40,7 +38,7 @@ function CreateUpdate() {
 				<select
 					className="nameImg"
 					id="id"
-					onChange={(event) => style(event.target.value)}
+					onChange={(event) => style(event)}
 				>
 					<option></option>
 					<option value="1">PRETO E BRANCO</option>
@@ -54,6 +52,7 @@ function CreateUpdate() {
 				<input
 					type="submit"
 					className="btnEnvio"
+					id="send"
 					value="ENVIAR"
 					onClick={submit}
 				></input>
