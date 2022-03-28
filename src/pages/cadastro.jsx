@@ -5,7 +5,6 @@ import FOOTER from "components/html/footer";
 import PESQUISA from "components/cadastro/pesquisa";
 import CreateUpdate from "components/cadastro/form";
 
-
 function Cadastrar() {
 	document.addEventListener("keydown", function (e) {
 		if (e.ctrlKey && e.shiftKey && e.key === "E") {

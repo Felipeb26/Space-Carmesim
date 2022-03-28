@@ -11,14 +11,12 @@ import TATO2 from "assets/img/tatuagem2.WebP";
 import TATO3 from "assets/img/tatuagem3.WebP";
 
 function Corpo() {
-
-	document.addEventListener("keydown", function(e){
-		let link = "/Space-Carmesim/cadastro";
-			if(e.ctrlKey && e.shiftKey && e.key === "E"){
-				window.location.assign(link)
-			}
+	document.addEventListener("keydown", function (e) {
+		if (e.ctrlKey && e.shiftKey && e.key === "E") {
+			window.location.assign("/cadastro");
+		}
 	});
-	
+
 	return (
 		<>
 			<div className="card">
