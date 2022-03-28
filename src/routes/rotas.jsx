@@ -15,7 +15,7 @@ import BaW from "components/style-pages/BlackWhitePage";
 function Rotas() {
 	return (
 		<div>
-			<Routes basename={process.env.PUBLIC_URL}>
+			<Routes>
 				<Route path="/" element={<Index />} />
 				<Route path="/contato" element={<Contato />} />
 				<Route path="/estilos" element={<Estilo />} />
