@@ -28,6 +28,7 @@ header {
     color: var(--cor-branco);
     margin: 0 1rem 0 0;
 	cursor: pointer;
+	font-size: 1.3rem;
 }
 
 .link{
@@ -43,7 +44,7 @@ header {
 
 @media (max-width: 900px){
 	header{
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;

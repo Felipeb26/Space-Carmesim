@@ -11,20 +11,30 @@ function SearchDelete() {
 		const fetchData = async () => {
 			const result = await axios
 				.get(`http://localhost:8080/${nome}`)
-				.then((response) => response.data)
-				.then((data) => data);
-
+				.then((response) => {
+					if(response.status === 200){
+						return(response.data)
+					}})
+				.catch((e) => {
+					if(e.response.status === 404){
+						alert("codigo 404")
+					}
+				})
 			setItens(result);
 		};
 		fetchData();
 	}, [nome]);
 
-	function handleChange(value) {
-		value = "";
-		console.log(value)
+	console.log(itens)
+	function Delete(value){
+		 axios.delete(`http://localhost:8080/delete/${value}`)
+			.then((res) => {if (res.status === 200) {alert("deu tudo certo")}})
+			.catch((e) => console.log(e))
+		setItens(itens.filter(itens => itens.id !== value))
 	}
+
 	return (
-		<form className="cardDelete" onSubmit={(event) => handleChange(event.target.value)}>
+		<div className="cardDelete">
 			<div className="sendAndGet">
 				<input
 					className="searchInput"
@@ -53,8 +63,8 @@ function SearchDelete() {
 						<span>{dado.nome}</span>
 						<button
 							className="btnDelete"
-							onClick={(event) =>
-								handleChange(event.target.value)
+							onClick={() =>
+								Delete(dado.id)
 							}
 						>
 							APAGAR
@@ -62,7 +72,7 @@ function SearchDelete() {
 					</div>
 				);
 			})}
-		</form>
+		</div>
 	);
 }
 
