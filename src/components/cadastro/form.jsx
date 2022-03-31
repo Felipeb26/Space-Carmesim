@@ -1,16 +1,28 @@
 import React, { useState } from "react";
-import INPUT from "components/html/inputFile";
 
 function CreateUpdate() {
+	const [fileName, fileContent] = useState("");
+	const [data, setData] = useState({
+		nome: "",
+		foto: fileName,
+		idImg: [],
+	});
+
 	let style = (value) => {
 		const newValue = { ...value };
 		newValue[value.target.id] = value.target.value;
 		data.idImg.push({ id: newValue.id });
 	};
-	const [data, setData] = useState({
-		nome: "",
-		idImg: [],
-	});
+
+	const handleFileChange = (e) => {
+		const file = e.target.files[0];
+		const reader = new FileReader();
+		reader.readAsDataURL(file);
+		reader.onload = () => {
+			fileContent(reader.result);
+		};
+		data.foto.replace("foto", {foto: fileName})
+	};
 
 	function postData(e) {
 		const newData = { ...data };
@@ -19,7 +31,7 @@ function CreateUpdate() {
 	}
 
 	function submit(e) {
-		e.preventDefault()
+		e.preventDefault();
 		console.log(data);
 	}
 
@@ -34,7 +46,26 @@ function CreateUpdate() {
 					placeholder="nome para a imagem"
 					onChange={(e) => postData(e)}
 				/>
-				<INPUT />
+				<div className="input">
+					<div className="inputFile">
+						<label className="inputLabel" htmlFor="fileCadastro">
+							ESCOLHER FOTO
+						</label>
+						<input
+							id="fileCadastro"
+							type="file"
+							onChange={handleFileChange}
+							name="fileCadastro"
+						></input>
+					</div>
+					<div className="image">
+						<img
+							className="imgCadastro"
+							src={fileName}
+							alt="tatuagem"
+						></img>
+					</div>
+				</div>
 				<select
 					className="nameImg"
 					id="id"
@@ -48,7 +79,11 @@ function CreateUpdate() {
 				</select>
 			</div>
 			<div className="btnsCadastro">
-				<button className="btnReset">alterar</button>
+				<input
+					className="btnReset"
+					type="button"
+					value="alterar"
+				></input>
 				<input
 					type="submit"
 					className="btnEnvio"

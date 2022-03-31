@@ -6,24 +6,20 @@ function InputFile() {
 	const handleFileChange = (e) => {
 		const file = e.target.files[0];
 		const reader = new FileReader();
-		reader.readAsArrayBuffer(file);
+		reader.readAsDataURL(file);
 		reader.onload = () => {
 			fileContent(reader.result);
 		};
 	};
 
-	console.log(fileName);
-
-	const arrayBufferView = new Uint8Array(fileName);
-	const blob = new Blob([arrayBufferView], { type: "image/jpeg" });
-	const urlCreator = window.URL || window.webkitURL;
-	const img = urlCreator.createObjectURL(blob);
-
+	sessionStorage.setItem("ft",fileName);
 	return (
 		<>
 			<div className="input">
 				<div className="inputFile">
-					<label className="inputLabel" htmlFor="fileCadastro">ESCOLHER FOTO</label>
+					<label className="inputLabel" htmlFor="fileCadastro">
+						ESCOLHER FOTO
+					</label>
 					<input
 						id="fileCadastro"
 						type="file"
@@ -32,7 +28,11 @@ function InputFile() {
 					></input>
 				</div>
 				<div className="image">
-					<img className="imgCadastro" src={img} alt="tatuagem"></img>
+					<img
+						className="imgCadastro"
+						src={fileName}
+						alt="tatuagem"
+					></img>
 				</div>
 			</div>
 		</>
