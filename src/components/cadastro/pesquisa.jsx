@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ORUMAITO from "assets/img/orumaito.png";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function SearchDelete() {
 	const [itens, setItens] = useState([]);
 	const [name, setName] = useState("");
@@ -11,13 +12,10 @@ function SearchDelete() {
 		const fetchData = async () => {
 			const result = await axios
 				.get(`http://localhost:8080/${nome}`)
-				.then((response) => {
-					if(response.status === 200){
-						return(response.data)
-					}})
+				.then((res) => res.data)
 				.catch((e) => {
 					if(e.response.status === 404){
-						alert("codigo 404")
+						toast.error("codigo 404", {theme: "dark"})
 					}
 				})
 			setItens(result);
@@ -25,16 +23,16 @@ function SearchDelete() {
 		fetchData();
 	}, [nome]);
 
-	console.log(itens)
 	function Delete(value){
 		 axios.delete(`http://localhost:8080/delete/${value}`)
-			.then((res) => {if (res.status === 200) {alert("deu tudo certo")}})
+			.then((res) => {if (res.status === 200) {toast.success("deu tudo certo")}})
 			.catch((e) => console.log(e))
 		setItens(itens.filter(itens => itens.id !== value))
 	}
 
 	return (
 		<div className="cardDelete">
+			<ToastContainer theme="dark"/>
 			<div className="sendAndGet">
 				<input
 					className="searchInput"

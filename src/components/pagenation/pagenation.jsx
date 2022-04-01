@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
-import ORUMAITO from "assets/img/orumaito.png";
 import SELECT from "components/html/select";
 
 function Pagenation() {
@@ -42,9 +41,9 @@ function Pagenation() {
 							<div className="item">
 								<img
 									className="imagem"
-									src={ORUMAITO}
+									src={item.foto}
 									key={item}
-									alt="teste"
+									alt={item.id}
 								></img>
 							</div>
 						);

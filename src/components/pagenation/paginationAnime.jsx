@@ -42,8 +42,8 @@ function Pagenation() {
 								<span>{item.nome}</span>
 								<img
 									className="imagem"
-									src={ORUMAITO}
-									key={item}
+									src={item.foto}
+									key={item.id}
 									alt="teste"
 								></img>
 							</div>

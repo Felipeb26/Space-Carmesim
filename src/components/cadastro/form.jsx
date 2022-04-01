@@ -1,17 +1,20 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function CreateUpdate() {
 	const [fileName, fileContent] = useState("");
 	const [data, setData] = useState({
 		nome: "",
-		foto: fileName,
-		idImg: [],
+		foto: "",
+		idImg: {},
 	});
 
 	let style = (value) => {
 		const newValue = { ...value };
 		newValue[value.target.id] = value.target.value;
-		data.idImg.push({ id: newValue.id });
+		data.idImg = { id: newValue.id };
 	};
 
 	const handleFileChange = (e) => {
@@ -21,7 +24,6 @@ function CreateUpdate() {
 		reader.onload = () => {
 			fileContent(reader.result);
 		};
-		data.foto.replace("foto", {foto: fileName})
 	};
 
 	function postData(e) {
@@ -30,19 +32,27 @@ function CreateUpdate() {
 		setData(newData);
 	}
 
-	function submit(e) {
+	const submit = (e) => {
 		e.preventDefault();
-		console.log(data);
-	}
+		data.foto = fileName;
+		const envio = axios.post("http://localhost:8080/add", data);
+		toast.promise(envio, {
+			pending: "Carregando",
+			success: "Adicionado ao banco",
+			error: "erro",
+		});
+	};
 
 	return (
 		<form className="cardCadastro">
+			<ToastContainer theme="dark" />
 			<div className="formCadastro">
 				<h3>Nome Da Imagem</h3>
 				<input
 					className="nameImg"
 					type="text"
 					id="nome"
+					maxLength="50"
 					placeholder="nome para a imagem"
 					onChange={(e) => postData(e)}
 				/>
@@ -72,10 +82,11 @@ function CreateUpdate() {
 					onChange={(event) => style(event)}
 				>
 					<option></option>
-					<option value="1">PRETO E BRANCO</option>
-					<option value="2">REALISTA</option>
-					<option value="3">COLORIDA</option>
-					<option value="4">ANIME</option>
+					<option value="1">ESCOLHA DO CLIENTE</option>
+					<option value="2">ANIME</option>
+					<option value="3">REALISTAS</option>
+					<option value="4">COLORIDAS</option>
+					<option value="5">PRETO E BRANCO</option>
 				</select>
 			</div>
 			<div className="btnsCadastro">
