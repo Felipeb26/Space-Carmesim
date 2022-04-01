@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
-
-import ORUMAITO from "assets/img/orumaito.png";
 import SELECT from "components/html/select"
 
 function BWPagenation() {
@@ -39,15 +37,17 @@ function BWPagenation() {
 				<div className="cardTato">
 					{itens.content?.map((item) => {
 						return (
-							<div className="item">
-								<span>{item.nome}</span>
-								<img
-									className="imagem"
-									src={item.foto}
-									key={item.id}
-									alt="teste"
-								></img>
-							</div>
+							<>
+								<div className="item">
+									<img
+										className="imagem"
+										src={item[2]}
+										key={item}
+										alt={item[0]}
+									></img>
+								<span>{item[1]}</span>
+								</div>
+							</>
 						);
 					})}
 				</div>
@@ -59,6 +59,7 @@ function BWPagenation() {
 						<button
 							className="Btn"
 							value={index}
+							key={item}
 							onClick={(e) => [
 								sessionStorage.setItem("pag", e.target.value),
 								window.location.reload(),

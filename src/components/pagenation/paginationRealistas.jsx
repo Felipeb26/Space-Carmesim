@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "assets/css/pagination.css";
-import ORUMAITO from "assets/img/orumaito.png";
 import SELECT from "components/html/select";
 
 
@@ -43,9 +42,9 @@ function PagenationRealistc() {
 								<span>{item.nome}</span>
 								<img
 									className="imagem"
-									src={item.foto}
-									key={item.id}
-									alt="teste"
+									src={item[2]}
+									key={item[1]}
+									alt={item[0]}
 								></img>
 							</div>
 						);
