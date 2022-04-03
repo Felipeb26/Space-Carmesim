@@ -38,11 +38,10 @@ function BWPagenation() {
 					{itens.content?.map((item) => {
 						return (
 							<>
-								<div className="item">
+								<div className="item" key={item}>
 									<img
 										className="imagem"
 										src={item[2]}
-										key={item}
 										alt={item[0]}
 									></img>
 								<span>{item[1]}</span>

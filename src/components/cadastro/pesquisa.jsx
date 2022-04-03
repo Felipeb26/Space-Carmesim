@@ -4,50 +4,51 @@ import ORUMAITO from "assets/img/orumaito.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const customId = "custom-id-yes";
+
 function SearchDelete() {
 	const [itens, setItens] = useState([]);
 	const [name, setName] = useState("");
 	const [nome, setNome] = useState("");
 
-	function notifica(){
-		toast.success({
-			pending: "Carregando",
-			success: "apagado com sucesso ao banco",
-			error: "erro",
-		});
-}
-
 	useEffect(() => {
 		const fetchData = async () => {
-			const result = await axios
-				.get(`http://localhost:8080/${nome}`)
-				.then((res) => res.data)
-				.catch((e) => {
-					if (e.response.status === 404) {
-						toast.error("codigo 404", { theme: "dark" });
-					}
-				});
+			const result = await axios({
+				method: "GET",
+				url: `http://localhost:8080/${nome}`,
+			})
+			.then((res) => res.data)
+			.catch((e) => {
+				if (e.response.status === 404) {
+					toast.error("Nenhum dado inicial no momento",{
+						closeOnClick: true,
+						autoClose: 2000,
+						toastId: customId,
+						theme: "dark"
+					});
+				}
+			});
 			setItens(result);
 		};
 		fetchData();
 	}, [nome]);
 
-	function Delete(value) {
-		const del = axios.delete(`http://localhost:8080/delete/${value}`)
-		.then((res) => {if(res.status === 200){
-			toast.success(del,{
-				pending: "Carregando",
-				success: "apagado com sucesso ao banco",
-				error: "erro",
-			});
-		}})
-		
+	const Delete = (value) => {
+		const del = axios({
+			method: "DELETE",
+			url: `http://localhost:8080/delete/${value}`,
+		});
+		toast.promise(del, {
+			pending: "Carregando",
+			success: "apagado com sucesso ao banco",
+			error: "erro",
+			theme: "dark",
+		});
 		setItens(itens.filter((itens) => itens.id !== value));
-	}
+	};
 
 	return (
 		<div className="cardDelete">
-			<ToastContainer theme="dark" />
 			<div className="sendAndGet">
 				<input
 					className="searchInput"
