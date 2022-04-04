@@ -55,18 +55,22 @@
 }
 
 @media (max-width: 900px) {
-	.cardQuemSomos{
+	.cardQuemSomos {
 		flex-wrap: wrap;
 		overflow-y: scroll;
 		margin: 13rem 0 4rem 1rem;
 		height: 22rem;
 	}
-	.cardQuemSomos h2{
+	.cardQuemSomos h2 {
 		padding: 0 0 0 10px;
+	}
+	.cardApresentacao {
+		margin: 1.5rem 1rem 0 1rem;
+		width: 90%;
 	}
 	.imagemTatuador {
 		height: 20rem;
-		width: 100%;
+		width: 25rem;
 		margin: 0;
 	}
 	.maisImagens {
@@ -74,22 +78,23 @@
 		width: 90%;
 	}
 	.cardTatuador {
-        width: 100%;
+		width: 100%;
 		margin: 0 0 0 0;
 		font-size: 10px;
 	}
 	.perfilTatuador {
-		margin: 0 0 0 0;
-		width: 100%;
+		margin: 1.5rem 1rem 0 1rem;
+		width: 14rem;
 		height: 100%;
 	}
 	.about {
+		padding: 0 15px 0 15px;
 		font-size: 12px;
 		overflow: hidden;
 	}
 	.video {
-		margin: 1rem 0 0 0;
-		width: 100%;
+		margin: 1.5rem 1rem 0 1rem;
+		width: 14rem;
 		height: 100%;
 	}
 }
