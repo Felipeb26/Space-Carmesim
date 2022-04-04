@@ -152,8 +152,9 @@
 }
 
 .imgDelete:active {
-	zoom: 500%;
-	position: relative;
+	-moz-transform: all 0.3s;
+	-webkit-transform: all 0.3s;
+	transform: scale(1.2);
 }
 
 @media (max-width: 900px) {

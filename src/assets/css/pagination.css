@@ -47,6 +47,13 @@
     border-radius: 10px;
     width: 270px;
     height: 270px;
+    cursor: zoom-in;
+}
+
+.imagem:active{
+    -moz-transform: all 0.3s;
+	-webkit-transform: all 0.3s;
+	transform: scale(1.2);
 }
 
 .divBtn {

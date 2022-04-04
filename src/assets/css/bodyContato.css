@@ -85,9 +85,14 @@
 
 .enviarMensagem {
 	border: 2px solid var(--cor-branco);
-	background: rgb(172, 23, 23);
+	background: var(--cor-red);
 	margin: 1rem 0 1rem 0;
+	font-weight: bolder;
 	font-size: 20px;
+}
+
+.enviarMensagem:hover{
+	background: var(--cor-vermelhoClaro);
 }
 
 @media (max-width: 900px) {
@@ -98,17 +103,21 @@
 	.cardTitulo {
 		padding: 1rem 0 0 5px;
 		font-size: 13px;
-		width: 30%;
+		width: 60%;
 	}
 	.mapaContato {
-		margin: 1rem 5px 1rem 0;
-		width: 50%;
-	}
-	.cardRefencias {
-		margin: 1rem 5px 1rem 0;
+		display: none;
 	}
 	.mapaRefencia {
 		margin: 0 0 0 0;
+	}
+	.mensagemTitulo{
+		padding: 0 0 0 0.5rem;
+		font-size: 17px;
+	}
+	.obs{
+		padding: 0;
+		font-size: 13px;
 	}
 	.mensagem {
 		margin: 1rem 0 0.5rem 0;

@@ -30,6 +30,13 @@
 	border-radius: 5px;
 	height: 20rem;
 	width: 33%;
+	cursor: zoom-in;
+}
+
+.img:active{
+	-moz-transform: all 0.3s;
+	-webkit-transform: all 0.3s;
+	transform: scale(1.2);
 }
 
 .listaTato {
@@ -47,6 +54,16 @@
 	display: flex;
 	width: 40%;
 	height: 30rem;
+}
+
+.imgLista{
+	cursor: zoom-in;
+}
+
+.imgLista:active{
+	-moz-transform: all 0.3s;
+	-webkit-transform: all 0.3s;
+	transform: scale(1.2);
 }
 
 .imgLista {
