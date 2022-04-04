@@ -8,6 +8,8 @@
 :root {
 	background: linear-gradient(180deg, #a31a1a 0%, #74181b 80%, #310b0b 100%);
 	background-attachment: fixed;
+	user-select: none;
+
 
 	--cor-back: #1d1c1c;
 	--cor-blackTransparent: rgba(37, 34, 37, 0.774);
