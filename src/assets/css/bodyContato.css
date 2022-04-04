@@ -102,8 +102,15 @@
 	}
 	.cardTitulo {
 		padding: 1rem 0 0 5px;
-		font-size: 13px;
 		width: 60%;
+	}
+	.cardTitulo h3{
+		padding: 0 0.5rem 0 0.5rem;
+		font-size: 0.75rem;
+	}
+	.cardTitulo span{
+		padding: 0 0 0 0.5rem;
+		font-size: 12px;
 	}
 	.mapaContato {
 		display: none;

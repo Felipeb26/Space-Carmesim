@@ -37,7 +37,9 @@
 	border-radius: 5px;
 	font-size: 20px;
 }
-
+.nameImg option {
+	font-weight: bold;
+}
 .image {
 	justify-content: center;
 	align-items: center;
@@ -163,17 +165,18 @@
 		flex-wrap: wrap;
 	}
 	.cardCadastro {
-		margin: 12rem 0 12rem 1rem;
-		width: 25rem;
+		margin: 12rem 0 10rem 0;
+		width: 90%;
+		height: 28rem;
 	}
 	.imgCadastro {
-		height: 33vh;
+		height: 35vh;
 	}
 	.nameImg {
 		font-size: 15px;
 	}
 	.cardDelete {
-		width: 25rem;
+		width: 90%;
 	}
 	.inputLabel {
 		font-size: 15px;
